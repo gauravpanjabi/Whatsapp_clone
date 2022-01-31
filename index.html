@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- shortcut icon/ favicon -->
+    <link rel="shortcut icon" type="image/png" href="whatsapp.png" >
+    <title>WhatsApp Clone</title>
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="header">
+            <div class="profile-image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbxK2GqqiNUqvlZXob2OQ9TNUVR9eVwTt6IQ&usqp=CAU" alt="">
+            </div>
+            <div class="chat-header-right">
+                <img src="circle-notch-solid.svg" alt="">
+                <img src="chat.svg" alt="">
+                <img src="more.svg" alt="">
+            </div>
+        </div>
+        <div class="sidebar-search">
+            <div class="sidebar-search-container">
+                <img src="search-solid.svg" alt="">
+                <input type="text" placeholder="Search or start new chat">
+            </div>
+        </div>
+        <div class="sidebar-chats">
+            <div class="sidebar-chat">
+                <div class="chat-profile-image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjJQdPO7YXTyA1O5ZFkBWoJdD43VMHZrmjaw&usqp=CAU" alt="">
+                </div>
+                <div class="chat-info">
+                    <h4>Jennifer</h4>
+                    <p>Okye.</p>
+                </div>
+                <div class="time">
+                    <p>2:44 pm</p>
+                </div>
+            </div>
+            <div class="sidebar-chat">
+                <div class="chat-profile-image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUqtThcp5Lgpw4we9RSEZOfZBGvpfE2XDC6A&usqp=CAU" alt="">
+                </div>
+                <div class="chat-info">
+                    <h4>Barbara</h4>
+                    <p>Please reply</p>
+                </div>
+                <div class="time">
+                    <p>2:44 pm</p>
+                </div>
+            </div>
+            <div class="sidebar-chat">
+                <div class="chat-profile-image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0SBGXDCkwdH_AtLYHmdq32rGPHR2iwhekDw&usqp=CAU" alt="">
+                </div>
+                <div class="chat-info">
+                    <h4>Nancy</h4>
+                    <p>How are you?</p>
+                </div>
+                <div class="time">
+                    <p>2:44 pm</p>
+                </div>
+            </div>
+            <div class="sidebar-chat">
+                <div class="chat-profile-image">
+                    <img src="https://www.worldlistmania.com/wp-content/uploads/2012/02/Salman-Khan.jpg" alt="">
+                </div>
+                <div class="chat-info">
+                    <h4>James</h4>
+                    <p>Send me the photo immediately</p>
+                </div>
+                <div class="time">
+                    <p>2:44 pm</p>
+                </div>
+            </div>
+            <div class="sidebar-chat">
+                <div class="chat-profile-image">
+                    <img src="data:image/jpeg;base64,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" alt="">
+                </div>
+                <div class="chat-info">
+                    <h4>Daniel</h4>
+                    <p>I got internship for you.</p>
+                </div>
+                <div class="time">
+                    <p>2:44 pm</p>
+                </div>
+            </div>
+            <div class="sidebar-chat">
+                <div class="chat-profile-image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwXeyP-0we_Bg4NLUu9awyp-9O_IM79T_9hQ&usqp=CAU" alt="">
+                </div>
+                <div class="chat-info">
+                    <h4>Matthew</h4>
+                    <p>Please commit the changes</p>
+                </div>
+                <div class="time">
+                    <p>2:44 pm</p>
+                </div>
+            </div>
+            <div class="sidebar-chat">
+                <div class="chat-profile-image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQShfK2eWJw2wf-N2gwcUGegeadK2fLFlqumw&usqp=CAU" alt="">
+                </div>
+                <div class="chat-info">
+                    <h4>Emily</h4>
+                    <p>Can you teach me module 5?</p>
+                </div>
+                <div class="time">
+                    <p>2:44 pm</p>
+                </div>
+            </div>
+            <div class="sidebar-chat">
+                <div class="chat-profile-image">
+                    <img src="https://cineblitz.in/wp-content/uploads/2021/10/Rani-Look-bb2-e1634973043363-1000x600.jpg" alt="">
+                </div>
+                <div class="chat-info">
+                    <h4>Carol</h4>
+                    <p>Share me your py notes.</p>
+                </div>
+                <div class="time">
+                    <p>2:44 pm</p>
+                </div>
+            </div>
+            <div class="sidebar-chat">
+                <div class="chat-profile-image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxQ7XxmGJ9p2wIZuzdboEpUQCqSg4OSCnzPw&usqp=CAU" alt="">
+                </div>
+                <div class="chat-info">
+                    <h4>Kevin</h4>
+                    <p>Bye.</p>
+                </div>
+                <div class="time">
+                    <p>2:44 pm</p>
+                </div>
+            </div>
+            <div class="sidebar-chat">
+                <div class="chat-profile-image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSyEWI6Df-tbNptJ-pyCwo8Ls89v2_MxEpVw&usqp=CAU" alt="">
+                </div>
+                <div class="chat-info">
+                    <h4>Edward</h4>
+                    <p>Come at my place tomorrow.</p>
+                </div>
+                <div class="time">
+                    <p>2:44 pm</p>
+                </div>
+            </div>
+            <div class="sidebar-chat">
+                <div class="chat-profile-image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPTzqflbx-qLxAnACLdnqMZnIt-AHXVKvQsg&usqp=CAU" alt="">
+                </div>
+                <div class="chat-info">
+                    <h4>Gary</h4>
+                    <p>Thankyou for helping my brother.</p>
+                </div>
+                <div class="time">
+                    <p>2:44 pm</p>
+                </div>
+            </div>
+            <div class="sidebar-chat">
+                <div class="chat-profile-image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuxsdVW3Dhar0I6U4n4OdHCrn_WVHuknYlhw&usqp=CAU" alt="">
+                </div>
+                <div class="chat-info">
+                    <h4>Jacob</h4>
+                    <p>How are you ?</p>
+                </div>
+                <div class="time">
+                    <p>2:44 pm</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="message-container">
+        <div class="header">
+            <div class="chat-title">
+                <div class="profile-image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjJQdPO7YXTyA1O5ZFkBWoJdD43VMHZrmjaw&usqp=CAU" alt="">
+                </div>
+                <div class="message-header-content">
+                    <h4>Jennifer</h4>
+                    <p>online</p>
+                </div>
+            </div>
+            <div class="chat-header-right">
+               <img src="search-solid.svg" alt="">
+                <img src="more.svg" alt="">
+            </div>
+        </div>
+        <div class="message-content">
+            <p class="chat-message">Hey! What are you doing now?<span class='chat-timestamp'>11:30 pm</span></p>
+            <p class="chat-message chat-sent">Watching Movies <span class='chat-timestamp'>11:32 pm</span></p>
+            <p class="chat-message">Why movies?<span class='chat-timestamp'>11:35 pm</span></p>
+            <p class="chat-message"> Don't you have to work project? <span class='chat-timestamp'>11:35 pm</span></p>
+            <p class="chat-message chat-sent">Completed with all my work yesterday only and now it's weekend <span class='chat-timestamp'>11:40 pm</span></p>
+            <p class="chat-message">WOW! Thats great <span class='chat-timestamp'>11:41 pm</span></p>
+            <p class="chat-message">Ok come at my place eveyone is here <span class='chat-timestamp'>11:41 pm</span></p>
+            <p class="chat-message">We are plannng for a trip come with us<span class='chat-timestamp'>11:33 pm</span></p>
+            <p class="chat-message chat-sent">trip?<span class='chat-timestamp'>11:33 pm</span></p>
+            <p class="chat-message chat-sent">when and where?<span class='chat-timestamp'>11:33 pm</span></p>
+            <p class="chat-message">Trip to lonavala for 3d2n are you coming with us?<span class='chat-timestamp'>11:33 pm</span></p>
+            <p class="chat-message">Day after tomorrow morning 6:00 am we have to leave<span class='chat-timestamp'>11:33 pm</span></p>
+            <p class="chat-message chat-sent">Ok i'll catch you guys in a 10 minutes coming at your place.<span class='chat-timestamp'>11:33 pm</span></p>
+            <p class="chat-message chat-sent">We will discuss there only.<span class='chat-timestamp'>11:33 pm</span></p>
+            <p class="chat-message">Okye.<span class='chat-timestamp'>11:33 pm</span></p>
+
+        </div>
+        <div class="message-footer-elements">
+            <img src="smile.svg" alt=" ">
+            <img src="paper-clip.svg" alt="">
+            <input type="text" placeholder="Type a message">
+            <img src="microphone.svg" alt="">
+        </div>
+    </div>
+</body>
+
+</html>
